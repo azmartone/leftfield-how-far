@@ -94,12 +94,14 @@ var renderDestinations = function(destinations, maxDistance){
 		percentage = (value.distance == null)? 0 : (value.distance.value / maxDistance * 100);
 		percentage = percentage + "%";
 
+		cups = (value.distance == null)? "Location not found" : (value.distance.cups) + ' cups';
+
 		console.log("percentage", percentage);
 		
 		innerHTML += '<div class="destination">' +
 				            '<div class="description">'+
 				                '<span class="search">' + value.description + '</span>' +
-				                '<span class="amount"></span>' +
+				                '<span class="amount">' + cups + '</span>' +
 				            '</div>' +
 				            '<div class="bar" style="width:'+ percentage +'"></div>' +
 				        '</div>';
