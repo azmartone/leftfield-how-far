@@ -303,14 +303,23 @@ textarea {
     }
 }
 
+/* Visualization */
+
+.destinations-container .destination {
+    margin-top: 20px;
+}
+
 .destinations-container .description span{
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
 }
 .destinations-container .description span.amount{
-    color:#ddd;
+    color:#aaa;
 }
 .destinations-container .bar{
     background-image: url(http://blawg.law.sc.edu/wp-content/uploads/2012/08/CoffeeCup.jpg);
     background-size:33px 50px;
     height:50px;
+    -webkit-transform-origin:0 0;
 }
