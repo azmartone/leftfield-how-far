@@ -304,9 +304,17 @@ textarea {
 }
 
 /* Visualization */
+.main-title{
+    text-align: center;
+}
 
 .destinations-container .destination {
     margin-top: 20px;
+}
+
+
+.destinations-container .destination:nth-child(odd) {
+    background: #f9f9f9;
 }
 
 .destinations-container .description span{
